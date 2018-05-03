@@ -1,0 +1,16 @@
+<!Doctype>
+<html>
+  <head>
+    <title>{{ config.SITE_NAME }}</title>
+  </head>
+  <body>
+    <h1>{{ config.SITE_NAME }}</h1>
+    <ul>
+      {% for nb in notebooks %}
+      <li><a href="{{ nb.url }}">{{ nb.name }}</a></li>
+      {% endfor %}
+    </ul>
+
+    <p><a href="https://github.com/defeo/jupyter/fork">Contribute a notebook</a></p>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+{%- extends 'full.tpl' -%}
+
+{% block body %}
+<a href="https://mybinder.org/v2/gh/defeo/ffisom/master?filepath={{ resources.filename }}"
+   style="font-size:200%">Run in Binder</a>
+
+{{ super() }}
+{% endblock %}
